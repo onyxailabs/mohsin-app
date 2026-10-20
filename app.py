@@ -13,7 +13,7 @@ import google.generativeai as genai
 st.set_page_config(page_title="MOHSIN EMPIRE LIVE", page_icon="⚡", layout="wide")
 
 # API KEY
-GEMINI_KEY = "AIzaSyCORgPGyPfHq24sJGNJ0D-yk0E7Yf13qE0"
+GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "")
 
 # --- 2. CSS: NEON UI ---
 st.markdown("""
@@ -126,4 +126,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-            
